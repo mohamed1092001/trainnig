@@ -608,18 +608,19 @@ footer .NEWSLETTER p {
         gap: 10px;
     }
 
-        footer{
-            flex-wrap: wrap;
-            gap: 20px;
-        }
+    footer {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
 
-    footer > *{
+    footer>* {
         width: 100% !important;
 
     }
 }
+
 @media (min-width:601px) and (max-width:788px) {
-    
+
     .calculator .container .card {
         width: calc((100% - 40px) / 2) !important;
     }
@@ -642,25 +643,41 @@ footer .NEWSLETTER p {
         gap: 10px;
     }
 
-        footer{
-            flex-wrap: wrap;
-            gap: 20px;
-        }
+    footer {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
 
-    footer > *{
+    footer>* {
         width: 100% !important;
 
     }
 }
 
-@media (min-width:0px) and (max-width:450px){
-    .interaction{
+@media (min-width:0px) and (max-width:450px) {
+    .interaction {
         flex-direction: column-reverse;
         margin-top: 5px;
         gap: 10px;
     }
 
-        .interaction .stars span{
-            display: none;
-        }
+    .interaction .stars span {
+        display: none;
+    }
+
+    .calculator {
+        padding: 70px 7%;
+    }
+
+    .Vision {
+        padding: 70px 7%;
+    }
+
+    .rating {
+        padding: 70px 7%;
+    }
+
+    footer {
+        padding: 70px 7%;
+    }
 }
