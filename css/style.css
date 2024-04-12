@@ -328,7 +328,7 @@ main .left-btn {
 
 .Vision .word p {
     font-size: 18px;
-    line-height: 24px;
+    line-height: 28px;
     color: #d5d5d5;
 }
 
@@ -452,6 +452,7 @@ main .left-btn {
     border-radius: 3px;
     text-transform: capitalize;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .new-opinion .body .footer .share-btn:hover {
@@ -650,4 +651,16 @@ footer .NEWSLETTER p {
         width: 100% !important;
 
     }
+}
+
+@media (min-width:0px) and (max-width:450px){
+    .interaction{
+        flex-direction: column-reverse;
+        margin-top: 5px;
+        gap: 10px;
+    }
+
+        .interaction .stars span{
+            display: none;
+        }
 }
