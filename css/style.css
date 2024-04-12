@@ -655,15 +655,21 @@ footer .NEWSLETTER p {
 }
 
 @media (min-width:0px) and (max-width:450px) {
+
+    .rating .container .opinion {
+        flex-direction: column;
+    }
+
     .interaction {
-        flex-direction: column-reverse;
         margin-top: 5px;
-        gap: 10px;
     }
 
     .interaction .stars span {
         display: none;
     }
+
+
+        .new-opinion {flex-direction: column;}
 
     .calculator {
         padding: 70px 7%;
