@@ -669,7 +669,9 @@ footer .NEWSLETTER p {
     }
 
 
-        .new-opinion {flex-direction: column;}
+    .new-opinion {
+        flex-direction: column;
+    }
 
     .calculator {
         padding: 70px 7%;
@@ -685,5 +687,11 @@ footer .NEWSLETTER p {
 
     footer {
         padding: 70px 7%;
+    }
+
+
+    .follow{
+        gap: 6px !important;
+        flex-direction: column;
     }
 }
