@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AXIS X CORE</title>
+    <!-- style files -->
+    <link rel="stylesheet" href="css/fixed.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- icons -->
+    <link rel="stylesheet" href="libs/fontawesome/css/all.min.css">
+    <!-- tap icon -->
+    <link rel="icon" href="img/icon.png">
+    <!-- font -->
+    <link rel="stylesheet" href="libs/font.css">
+    <!-- font 2 -->
+    <link href="libs/font2.css" rel="stylesheet">
+    <style>
+        header{
+            height: 60px !important;
+        }
+        header img{
+            height: 100% !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header >
+        <img src="img/header-bg-sign-log.png" class="header-bg" alt="">
+        <main class="flex flex-a-center ">
+            <nav class="flex flex-j-between flex-a-center wid-100">
+                <a href="index.html" class="logo">
+                    <img src="img/logo.png" alt="">
+                </a>
+
+                <div class="nqv-child flex gap-20 flex-a-center">
+                    <div class="menu-container">
+                        <button class="menu-btn flex flex-a-center flex-j-center" drop="off"><i
+                                class="fa-solid fa-bars"></i></button>
+                        <div class="drop-down">
+                            <a href="#">Cardio</a>
+                            <a href="#">Trainer</a>
+                            <a href="#">BMR</a>
+                            <a href="#">Advices</a>
+                        </div>
+                    </div>
+
+                    <div class="account">
+                        <button class="account-btn" drop="off">
+                            <img src="img/user.png" alt="">
+                        </button>
+                        <div class="drop-down">
+                            <a href="sign-up.html">sign up</a>
+                            <a href="login.html">logIn</a>
+                            <a href="#">logOut</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </main>
+
+    </header>
+
+    <!-- account-section -->
+
+    <section class="account-section flex flex-j-between flex-a-center">
+        <form>
+            <div class="title">
+                <h2>sign up</h2>
+            </div>
+            <p class="sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore atque soluta quae magni, suscipit vitae.</p>
+
+            <div class="applecation flex flex-column gap-20">
+                <div class="row gap-20 double-row flex flex-wrap">
+                    <div class="input-box">
+                        <label for="f_name">first name</label>
+                        <input type="text" id="f_name" name="f_name" placeholder="write your first name">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="l_name">last name</label>
+                        <input type="text" id="l_name" name="l_name" placeholder="write your last name">
+                    </div>
+                </div>
+                <div class="row gap-20 single-row flex">
+                    <div class="input-box">
+                        <label for="Email">Email</label>
+                        <input type="email" id="Email" name="Email" placeholder="write your Email@gmail.com">
+                    </div>
+                </div>
+                <div class="row gap-20 double-row flex flex-wrap">
+                    <div class="input-box">
+                        <label for="password">password</label>
+                        <input type="password" id="password" name="password" placeholder="write your password">
+                    </div>
+                
+                    <div class="input-box">
+                        <label for="confirm_password">confirm password</label>
+                        <input type="password" id="confirm_password" name="confirm_password" placeholder="confirm password">
+                    </div>
+                </div>
+
+                <button type="submit">sign up</button>
+            </div>
+        </form>
+        <div class="img">
+            <img src="img/sign-banner.png" alt="">
+        </div>
+    </section>
+
+    <!-- footer -->
+    
+    <footer class="flex flex-j-between flex-a-start">
+        <div class="about">
+            <img src="img/logo.png" alt="">
+            <p class="info">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, nemo molestiae. Dicta, iure distinctio!
+                Saepe reprehenderit ratione voluptatibus nisi ipsum. Nobis non, iste aperiam incidunt dolorem itaque
+                adipisci error voluptatem.
+            </p>
+            <div class="follow flex gap-30 flex-wrap">
+                <h3>follow us <span>on <i class="fa-solid fa-arrow-right"></i></span></h3>
+                <div class="social flex gap-10">
+                    <a href="#"><img src="img/face-icon.png" alt=""></a>
+                    <a href="#"><img src="img/insta-icon.png" alt=""></a>
+                    <a href="#"><img src="img/twitter-icon.png" alt=""></a>
+                    <a href="#"><img src="img/telegram-icon.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="quick-link">
+            <h3>QUICK LINK</h3>
+            <a href="#"> <i class="fa-solid fa-check"></i> Cardio</a>
+            <a href="#"> <i class="fa-solid fa-check"></i> Trainer</a>
+            <a href="#"> <i class="fa-solid fa-check"></i> BMR</a>
+            <a href="#"> <i class="fa-solid fa-check"></i> Advices</a>
+        </div>
+        <div class="NEWSLETTER">
+            <h3>NEWSLETTER</h3>
+            <p>Subscribe our newsletter to get our latest update & newsconsectetur</p>
+            <div class="subscribe-box flex">
+                <input type="text" placeholder="Get News & Updates"><button><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </footer>
+    
+    <section class="powered">powered by <span>dragon coder</span></section>
+    
+    
+    <!-- script -->
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/main.js"></script>
+    </body>
+    
+    </html>

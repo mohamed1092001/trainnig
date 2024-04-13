@@ -115,7 +115,7 @@ main .active .drop-down {
     text-transform: capitalize;
 }
 
-.account .drop-down a:hover{
+.account .drop-down a:hover {
     background-color: #839759;
 
 }
@@ -605,7 +605,86 @@ footer .NEWSLETTER p {
 }
 
 
-/* responsive */
+
+/* account-section */
+
+.account-section {
+    padding: 70px 5%;
+    background-color: #0f161c;
+}
+
+.account-section>* {
+    width: calc(50% - 70px);
+}
+
+
+.account-section .title {
+    margin: 0%;
+}
+
+.account-section .sub-title {
+    margin: 20px 0px;
+    color: #839759;
+    letter-spacing: 1px;
+    line-height: 23px;
+    font-size: 18px;
+    opacity: .8;
+}
+
+.account-section .img img {
+    width: 100%;
+    filter: drop-shadow(50px 30px 50px #000);
+}
+
+/* applecation */
+
+.applecation .double-row .input-box {
+    width: calc((100% - 20px) / 2);
+}
+
+.applecation .single-row .input-box {
+    width: 100%;
+}
+
+.applecation .input-box label {
+    text-transform: capitalize;
+    font-family: "cairo play";
+}
+
+.applecation .input-box input {
+    display: block;
+    margin-top: 5px;
+    width: 100%;
+    background-color: transparent;
+    border: solid 1px #94ab64;
+    padding: 12px;
+    border-radius: 2px;
+    font-size: 16px;
+}
+
+.applecation input::placeholder {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: "cairo play";
+}
+
+.account-section button[type="submit"] {
+    background-color: #839759;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 10px 50px;
+    width: fit-content;
+    border-radius: 2px;
+    cursor: pointer;
+    opacity: .9;
+    margin-top: 20px;
+}
+
+.account-section button[type="submit"]:hover {
+    opacity: 1;
+    /* responsive */
+}
 
 @media (min-width:0px) and (max-width:600px) {
     header .header-bg {
@@ -659,6 +738,18 @@ footer .NEWSLETTER p {
         width: 100% !important;
 
     }
+
+    .account-section .img {
+        display: none;
+    }
+
+    .account-section form {
+        width: 100%;
+    }
+
+    .account-section .input-box {
+        width: 100% !important;
+    }
 }
 
 @media (min-width:601px) and (max-width:840px) {
@@ -692,14 +783,21 @@ footer .NEWSLETTER p {
 
     footer>* {
         width: 100% !important;
+    }
 
+    .account-section form {
+        width: 100%;
+    }
+
+    .account-section .img {
+        display: none;
     }
 }
 
-@media (min-width:800px) and (max-width:1052px){
+@media (min-width:800px) and (max-width:1052px) {
     .calculator .container .card {
-            width: calc((100% - 40px) / 3) !important;
-        }
+        width: calc((100% - 40px) / 3) !important;
+    }
 }
 
 @media (min-width:0px) and (max-width:450px) {
@@ -741,5 +839,12 @@ footer .NEWSLETTER p {
     .follow {
         gap: 6px !important;
         flex-direction: column;
+    }
+}
+
+
+@media (min-width:841px) and (max-width:1000px) {
+    .account-section>* {
+        width: calc(50% - 30px);
     }
 }

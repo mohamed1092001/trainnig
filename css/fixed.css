@@ -115,3 +115,9 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #bad67e;
 }
+
+/* width */
+
+.wid-100{
+    width: 100%;
+}
