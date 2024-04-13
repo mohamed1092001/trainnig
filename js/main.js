@@ -23,3 +23,11 @@ $(".account-btn").click(function () {
         $(".account").removeClass("active");
     }
 })
+
+
+// range
+
+$("input[type=range]").change(function(){
+    let value=$(this).val();
+    $(this).closest(".input-box").find(".num").html(value)
+})
