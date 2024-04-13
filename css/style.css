@@ -6,6 +6,10 @@
 
 /* body */
 
+body {
+    background-color: #05080a;
+}
+
 /* header */
 
 header {
@@ -61,6 +65,10 @@ main nav .logo img {
 
 /* accounts */
 
+.account {
+    position: relative;
+}
+
 .account-btn {
     width: 40px;
     aspect-ratio: 1/1;
@@ -79,6 +87,37 @@ main nav .logo img {
 
 .account-btn img {
     width: 100%;
+}
+
+.account .drop-down {
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    background-color: #17222c;
+    width: 110px;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: .3s;
+}
+
+main .active .drop-down {
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.account .drop-down a {
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+.account .drop-down a:hover{
+    background-color: #839759;
+
 }
 
 /* menu-container */
@@ -102,7 +141,7 @@ main nav .menu-btn {
     border-bottom-right-radius: 0px;
 }
 
-main nav .menu-container:hover .menu-btn {
+main nav .active .menu-btn {
     background-color: #94ab64;
 
 }
@@ -121,7 +160,7 @@ main .menu-container .drop-down {
     transition: .3s;
 }
 
-main .menu-container:hover .drop-down {
+main .active .drop-down {
     opacity: 1;
     transform: scaleY(1);
 
@@ -373,6 +412,9 @@ main .left-btn {
     color: #94ab64;
 }
 
+.rating .container .opinion .interaction {
+    margin-top: 5px;
+}
 
 .rating .container .opinion .interaction .stars i {
     color: #ffff51;
@@ -619,10 +661,10 @@ footer .NEWSLETTER p {
     }
 }
 
-@media (min-width:601px) and (max-width:788px) {
+@media (min-width:601px) and (max-width:840px) {
 
     .calculator .container .card {
-        width: calc((100% - 40px) / 2) !important;
+        width: calc((100% - 20px) / 2) !important;
     }
 
     .Vision>* {
@@ -652,6 +694,12 @@ footer .NEWSLETTER p {
         width: 100% !important;
 
     }
+}
+
+@media (min-width:800px) and (max-width:1052px){
+    .calculator .container .card {
+            width: calc((100% - 40px) / 3) !important;
+        }
 }
 
 @media (min-width:0px) and (max-width:450px) {
@@ -690,7 +738,7 @@ footer .NEWSLETTER p {
     }
 
 
-    .follow{
+    .follow {
         gap: 6px !important;
         flex-direction: column;
     }

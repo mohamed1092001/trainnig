@@ -93,3 +93,25 @@
     padding-top: 15vh !important;
     padding-bottom: 15vh !important;
 }
+
+/* scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #487724;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #94ab64;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #bad67e;
+}
