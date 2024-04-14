@@ -867,3 +867,34 @@ footer .NEWSLETTER p {
 input[type=range] {
     padding: 0% !important;
 }
+
+
+/* coming */
+
+.coming{
+    text-align: center;
+    font-size: calc(1.8vw + 40px);
+    padding: 70px 5%;
+    text-transform: capitalize;
+    font-family: "cairo play";
+    font-weight: bold;
+    color: #f0f0f0;
+    white-space: nowrap;
+}
+
+.back{
+    display: block;
+    font-size: 20px;
+    color: #839759;
+    text-transform: capitalize;
+    text-decoration: underline;
+    opacity: .7;
+}
+
+.back i{
+    font-size: 16px;
+}
+
+.back:hover{
+    opacity: 1;
+}
