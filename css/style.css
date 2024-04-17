@@ -871,7 +871,7 @@ input[type=range] {
 
 /* coming */
 
-.coming{
+.coming {
     text-align: center;
     font-size: calc(1.8vw + 40px);
     padding: 70px 5%;
@@ -883,7 +883,7 @@ input[type=range] {
     background-color: #17222c;
 }
 
-.back{
+.back {
     display: block;
     font-size: 20px;
     color: #839759;
@@ -892,10 +892,343 @@ input[type=range] {
     opacity: .7;
 }
 
-.back i{
+.back i {
     font-size: 16px;
 }
 
-.back:hover{
+.back:hover {
     opacity: 1;
+}
+
+/* trainers */
+
+.side-bar {
+    width: 200px;
+    height: calc(100vh - 70px);
+    padding: 50px 20px;
+    box-shadow: 0px 0px 10px #000;
+    position: sticky;
+    top: 0%;
+    left: 0%;
+}
+
+.side-bar .side-title {
+    color: #839759;
+    font-family: "cairo play";
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.side-bar .side-title:nth-child(3) {
+    margin-top: 30px;
+}
+
+.side-bar i {
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.side-bar .ancor-container {
+    /* padding-left: 15px; */
+}
+
+.side-bar .ancor-container a {
+    display: block;
+    opacity: .8;
+    margin-bottom: 5px;
+}
+
+.side-bar .ancor-container a:hover {
+    opacity: 1;
+}
+
+.main-container {
+    width: calc(100% - 200px);
+    background-color: #10181f;
+    padding: 70px 5%;
+}
+
+.trainers-container {
+    margin-top: 60px;
+}
+
+.trainers-container .card {
+    width: calc((100% - 60px) / 4);
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px 4px #000000a1;
+    cursor: pointer;
+}
+
+.trainers-container .card:hover {
+    box-shadow: 0px 0px 4px #98ae67;
+}
+
+.trainers-container .card::after {
+    content: " ";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #0000008e;
+    opacity: 0;
+    transition: .4s linear;
+}
+
+.trainers-container .card:hover::after {
+    opacity: 1;
+}
+
+.trainers-container .card img {
+    width: 100%;
+    aspect-ratio: 1/1.4;
+    display: block;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.trainers-container .card:hover img {
+    transform: scale(1.3);
+}
+
+.trainers-container .card .info {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: 2;
+    transform: translateY(50px);
+    transition: .4s;
+}
+
+.trainers-container .card:hover .info {
+    transform: translateY(0px);
+}
+
+.trainers-container .card .info .name {
+    padding: 10px;
+    font-family: "cairo play";
+    text-transform: uppercase;
+    color: #d5d5d5;
+    font-size: 23px;
+    line-height: 26px;
+    font-weight: bold;
+    letter-spacing: 1.1px;
+    text-shadow: 0px 0px 7px #000;
+}
+
+
+.trainers-container .card .info .details {
+    height: 50px;
+    background-color: #0f161c;
+    box-shadow: 0px 0px 13px 4px #000;
+    padding: 0px 10px;
+}
+
+.trainers-container .card .info .details button {
+    opacity: .8;
+    background-color: transparent;
+    font-size: 20px;
+    border-radius: 50%;
+    width: 40px;
+    aspect-ratio: 1/1;
+
+}
+
+.trainers-container .card .info .details button:hover {
+    opacity: 1;
+    cursor: pointer;
+    background-color: #839759;
+}
+
+
+.avilable-btn i {
+    color: #40ff00;
+    text-shadow: 0px 0px 5px #40ff00;
+}
+
+.not-avilable-btn i {
+    color: #ff1500;
+    text-shadow: 0px 0px 5px #ff1500;
+}
+
+.information {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    z-index: 3;
+    padding: 20px 10px;
+}
+
+.information>div {
+    margin-bottom: 5px;
+    transform: translateX(-120%);
+    transition: .4s;
+}
+
+.information div span {
+    color: #839759;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-shadow: 0px 0px 5px #000;
+}
+
+.information div:nth-child(1) {
+    transform: translateX(0%);
+}
+
+.information div:nth-child(4) {
+    transition-delay: 0s;
+}
+
+.information div:nth-child(3) {
+    transition-delay: .2s;
+}
+
+.information div:nth-child(2) {
+    transition-delay: .4s;
+}
+
+/* hover 1*/
+
+.trainers-container .card:has(.info .details button:nth-child(1):hover) img {
+    transform-origin: left;
+}
+
+.trainers-container .card:has(.info .details button:nth-child(1):hover) .information div:nth-child(2) {
+    transition-delay: 0s;
+}
+
+.trainers-container .card:has(.info .details button:nth-child(1):hover) .information div:nth-child(3) {
+    transition-delay: .2s;
+}
+
+.trainers-container .card:has(.info .details button:nth-child(1):hover) .information div:nth-child(4) {
+    transition-delay: .4s;
+}
+
+.trainers-container .card:has(.info .details button:nth-child(1):hover) .information div {
+    transform: translateX(0px);
+}
+
+/* hover 2*/
+
+.trainers-container .card:has(.info .details button:nth-child(2):hover) img {
+    transform-origin: right;
+}
+
+.trainers-container .card:has(.info .details button:nth-child(2):hover) .information div:nth-child(1) {
+    transform: translateX(-120%);
+    transition-delay: .4s;
+}
+
+.trainers-container .card .social {
+    position: absolute;
+    right: 0%;
+    top: 20%;
+    z-index: 3;
+    padding: 20px 10px;
+}
+
+.trainers-container .card .social a {
+    display: block;
+    margin-bottom: 10px;
+    transform: translateX(200%);
+    transition: .4s;
+    opacity: 0;
+}
+
+.trainers-container .card .social a:nth-child(2) {
+    transition-delay: .2s;
+}
+
+.trainers-container .card .social a:nth-child(3) {
+    transition-delay: .3s;
+}
+
+.trainers-container .card .social a:nth-child(4) {
+    transition-delay: .4s;
+}
+
+.trainers-container .card .social a i {
+    color: #d5d5d5;
+    font-size: 18px;
+}
+
+.trainers-container .card .social a:hover i {
+    color: #fff;
+}
+
+
+.trainers-container .card:has(.info .details button:nth-child(2):hover) .social a {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+/* hover 3*/
+
+.trainers-container .card:has(.info .details button:nth-child(3):hover) img {
+    transform-origin: top;
+}
+
+.trainers-container .card:has(.info .details button:nth-child(3):hover) .information div:nth-child(1) {
+    transform: translateX(-120%);
+    transition-delay: .4s;
+}
+
+
+.trainers-container .card .stars {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    z-index: 3;
+    padding: 20px 10px;
+    transform: translateX(-50%) translateY(-150%);
+    white-space: nowrap;
+    transition-duration: .3s;
+}
+
+.trainers-container .card .stars i {
+    color: #d5d5d5;
+}
+
+.trainers-container .card:has(.info .details button:nth-child(3):hover) .stars {
+    transform: translateX(-50%);
+    transition-delay: .4s;
+}
+
+@media (min-width:0px) and (max-width:600px) {
+    .side-bar {
+        display: none;
+    }
+
+    .main-container {
+        width: 100%;
+    }
+
+    .trainers-container .card {
+        width: calc((100% - 20px) / 2);
+    }
+
+}
+
+
+@media (min-width:601px) and (max-width:710px) {
+    .trainers-container .card {
+        width: 100%;
+    }
+}
+
+@media (min-width:711px) and (max-width:800px) {
+    .trainers-container .card {
+        width: calc((100% - 20px) / 2);
+    }
+}
+
+@media (min-width:801px) and (max-width:1100px) {
+    .trainers-container .card {
+        width: calc((100% - 40px) / 3);
+    }
 }
