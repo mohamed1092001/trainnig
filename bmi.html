@@ -17,33 +17,32 @@
     <!-- font 2 -->
     <link href="libs/font2.css" rel="stylesheet">
     <style>
-        header {
-            height: 60px !important;
-        }
-
-        header img {
-            height: 100% !important;
+        header .header-bg {
+            height: 70vh;
+            object-fit: cover;
+            object-position: right !important;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <img src="img/header-bg-sign-log.png" class="header-bg" alt="">
-        <main class="flex flex-a-center ">
-            <nav class="flex flex-j-between flex-a-center wid-100">
+        <img src="img/bmi-header.jpg" class="header-bg" alt="">
+        <main>
+            <nav class="flex flex-j-between flex-a-center">
                 <a href="index.html" class="logo">
                     <img src="img/logo.png" alt="">
                 </a>
 
                 <div class="nqv-child flex gap-20 flex-a-center">
+
                     <div class="menu-container">
                         <button class="menu-btn flex flex-a-center flex-j-center" drop="off"><i
                                 class="fa-solid fa-bars"></i></button>
                         <div class="drop-down">
-                            <a href="coming-soon.html">Cardio</a>
+                            <a href="cardio.html">Cardio</a>
                             <a href="trainers.html">Trainer</a>
-                            <a href="bmi.html">bmi</a>
+                            <a href="bmi.html">BMI</a>
                             <a href="coming-soon.html">Advices</a>
                         </div>
                     </div>
@@ -56,14 +55,18 @@
                             <a href="sign-up.html">sign up</a>
                             <a href="login.html">logIn</a>
                             <a href="#">logOut</a>
+
                         </div>
                     </div>
                 </div>
             </nav>
+            <div class="banner flex">
+                <img src="img/bmi.png" style="width: 45%;">
+            </div>
+
         </main>
 
     </header>
-
     <!-- account-section -->
 
     <section class="account-section flex flex-j-center flex-a-center">
@@ -137,8 +140,8 @@
 
         <div class="quick-link">
             <h3>QUICK LINK</h3>
-            <a href="coming-soon.html"> <i class="fa-solid fa-check"></i> Cardio</a>
-            <a href="coming-soon.html"> <i class="fa-solid fa-check"></i> Trainer</a>
+            <a href="cardio.html"> <i class="fa-solid fa-check"></i> Cardio</a>
+            <a href="trainers.html"> <i class="fa-solid fa-check"></i> Trainer</a>
             <a href="bmi.html"> <i class="fa-solid fa-check"></i> bmi</a>
             <a href="coming-soon.html"> <i class="fa-solid fa-check"></i> Advices</a>
         </div>

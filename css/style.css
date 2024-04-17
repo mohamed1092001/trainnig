@@ -1138,6 +1138,7 @@ input[type=range] {
     transform: translateX(200%);
     transition: .4s;
     opacity: 0;
+    text-align: center;
 }
 
 .trainers-container .card .social a:nth-child(2) {
@@ -1232,4 +1233,8 @@ input[type=range] {
     .trainers-container .card {
         width: calc((100% - 40px) / 3);
     }
+}
+
+.side-bar .side-title:nth-child(5) {
+    margin-top: 30px;
 }
