@@ -1209,7 +1209,8 @@ input[type=range] {
     }
 
     .trainers-container .card {
-        width: calc((100% - 20px) / 2);
+        width: 85%;
+        margin: auto;
     }
 
 }
