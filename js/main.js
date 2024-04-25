@@ -37,12 +37,18 @@ $("input[type=range]").on("input", function () {
 // لما نضغط على زرار السابمت
 $(".bmi-form").submit(function (e) {
 
+    // امنع عملية الريلود اللى الفورم بيعملها و هو بيبعت الداتا 
+    e.preventDefault();
+
+    var resultCon = $(".result-con").offset();
+    console.log(resultCon.top)
+    $(window).scrollTop((resultCon.top)-300);
+
+
     $(".result-con").css("flex-grow", "1");
     setTimeout(function () {
         $(".result-con .slide").slideDown(1000)
     }, 1500)
-    // امنع عملية الريلود اللى الفورم بيعملها و هو بيبعت الداتا 
-    e.preventDefault();
 
     // الحاجات اللى بنستلمها من الفورم
     let age = $("#age").val();
