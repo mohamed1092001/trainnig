@@ -612,6 +612,8 @@ footer .NEWSLETTER p {
 .account-section {
     padding: 70px 5%;
     background-color: #0f161c;
+    gap: 70px;
+    flex-wrap: wrap;
 }
 
 .account-section>* {
@@ -1237,4 +1239,37 @@ input[type=range] {
 
 .side-bar .side-title:nth-child(5) {
     margin-top: 30px;
+}
+
+/* result */
+.result-con{
+    display: none;
+}
+
+.result img {
+    width: 40%;
+}
+
+.result .result-information {
+    flex-grow: 1;
+    padding: 30px 0px;
+
+}
+
+.result .result-information p {
+    background-color: #05080a;
+    width: 100%;
+    min-height: 40px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:inset 0px 0px 20px #000;
+}
+
+.result .result-information p span{
+    color: #94ab64;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-right: 5px;
 }

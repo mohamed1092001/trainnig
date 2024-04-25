@@ -71,7 +71,7 @@
 
     <section class="account-section flex flex-j-center flex-a-center">
 
-        <form>
+        <form class="bmi-form">
             <div class="title">
                 <h2>BMI calculator </h2>
             </div>
@@ -98,7 +98,7 @@
                             <label for="height">height</label>
                             <div class="value"><span class="num">0</span> cm</div>
                         </div>
-                        <input type="range" id="height" name="height" min="1" max="255" value="0" step="1">
+                        <input type="range" id="height" name="height" min="0" max="200" value="0" step="1">
                     </div>
                 </div>
                 <div class="row gap-20 single-row flex">
@@ -114,8 +114,21 @@
                 <button type="submit">calculate</button>
             </div>
         </form>
+        <div class="result-con">
 
+            <div class="result flex flex-a-start gap-20">
+                <img src="Img/min-18.svg" alt="">
+                <div class="result-information flex flex-column gap-20">
+                    <p class="bmi-result-number"> </p>
+                    <p class="bmi-result-text"> </p>
+                    <p class="bmi-result-perfect"></p>
+                    <p class="bmi-result-need"></p>
+                </div>
+            </div>
+        </div>
     </section>
+    <!-- result -->
+
 
     <!-- footer -->
 
