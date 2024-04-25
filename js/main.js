@@ -43,23 +43,21 @@ $(".bmi-form").submit(function (e) {
     var resultCon = $(".result-con").offset();
     let winscrollTop = $(window).scrollTop();
     console.log(winscrollTop)
-    setInterval(function () {
+    s = setInterval(function () {
         if (winscrollTop < (resultCon.top - 300)) {
             winscrollTop = winscrollTop + 3;
             $(window).scrollTop(winscrollTop);
-            console.log()
-        } else {
-            clearInterval()
         }
         if (winscrollTop > (resultCon.top - 300)) {
             winscrollTop = winscrollTop - 3;
             $(window).scrollTop(winscrollTop);
-            console.log()
-        } else {
-            clearInterval()
         }
     }
     )
+
+    setTimeout(function(){
+        clearInterval(s)
+    },1000)
 
 
     $(".result-con").css("flex-grow", "1");
