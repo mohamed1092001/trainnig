@@ -1223,9 +1223,10 @@ input[type=range] {
     .result .result-information {
         padding: 30px !important;
     }
-        .result .result-information p{
-            padding: 15px ;
-        }
+
+    .result .result-information p {
+        padding: 15px;
+    }
 
 }
 
@@ -1256,7 +1257,7 @@ input[type=range] {
 .result-con {
     overflow: hidden;
     width: 0px;
-    transition: 1.4s ease;
+    transition: 1s ease;
     background-color: #1f2935;
     border-radius: 5px;
     box-shadow: inset 0px 0px 8px #000, inset 0px 0px 8px #000;
