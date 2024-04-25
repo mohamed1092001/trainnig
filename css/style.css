@@ -1242,34 +1242,50 @@ input[type=range] {
 }
 
 /* result */
-.result-con{
+.result-con {
+    overflow: hidden;
+    width: 0px;
+    transition: 1.4s ease;
+    background-color: #1f2935;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 8px #000,inset 0px 0px 8px #000;
+    border: solid 1px #000000b0;
+}
+
+.result-con .slide{
     display: none;
 }
 
 .result img {
-    width: 40%;
+    width: 35%;
 }
 
 .result .result-information {
     flex-grow: 1;
-    padding: 30px 0px;
+    padding: 30px ;
+    padding-left: 0px;
 
 }
 
 .result .result-information p {
-    background-color: #05080a;
+    background-color: #0d1318;
     width: 100%;
     min-height: 40px;
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow:inset 0px 0px 20px #000;
+    box-shadow: inset 0px 0px 20px #000;
 }
 
-.result .result-information p span{
+.result .result-information p span {
     color: #94ab64;
     text-transform: uppercase;
     font-weight: 500;
     margin-right: 5px;
+}
+
+
+.result .result-information .bmi-result-advice{
+    padding: 20px;
 }
