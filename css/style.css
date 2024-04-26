@@ -1304,3 +1304,58 @@ input[type=range] {
 .result .result-information .bmi-result-advice {
     padding: 20px;
 }
+
+.file-box {
+    display: block;
+    margin-top: 5px;
+    width: 100%;
+    background-color: transparent;
+    border: solid 1px #94ab64;
+    padding: 10px;
+    border-radius: 2px;
+    font-size: 16px;
+    position: relative;
+    padding: 0% !important;
+}
+
+.file-box input {
+    margin: 0% !important;
+    
+    opacity: 0;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    padding: 12px;
+}
+
+.file-box div {
+    font-size: 14px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    font-family: "cairo play";
+    opacity: .6;
+    padding: 12px;
+}
+.file-box:hover div{
+    opacity: 1;
+}
+
+.file-box div i{
+    margin-right: 5px;
+}
+
+.file-box div button{
+    color: #0a0f13;
+    background-color: #98ae67;
+    background-color: #aeff00;
+    padding:7px 20px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    font-weight: bold;
+}

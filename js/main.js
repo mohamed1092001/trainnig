@@ -43,6 +43,7 @@ $(".bmi-form").submit(function (e) {
     var resultCon = $(".result-con").offset();
     let winscrollTop = $(window).scrollTop();
     console.log(winscrollTop)
+    
     s = setInterval(function () {
         if (winscrollTop < (resultCon.top - 300)) {
             winscrollTop = winscrollTop + 3;
@@ -108,3 +109,11 @@ $(".bmi-form").submit(function (e) {
         $(".bmi-result-advice").html("Seek professional medical support to improve your overall health and risk of obesity-related chronic diseases.<br>Follow a healthy diet with a balanced exercise program to gradually lose excess weight.")
     }
 })
+
+const fileInput = document.querySelector('.file-box input');
+
+fileInput.addEventListener('change', function () {
+    const fileName = this.files[0].name;
+    console.log(fileName)
+    $(".file-box span").html('<i class="fa-solid fa-image"></i>'+fileName)
+});
